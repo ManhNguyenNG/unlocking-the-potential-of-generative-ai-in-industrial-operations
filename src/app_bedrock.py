@@ -63,7 +63,7 @@ def main():
 
     llm = Bedrock(
         client=bedrock_runtime,
-        model_id="anthropic.claude-v2"
+        model_id="anthropic.claude-3-7-sonnet-20250219-v1:0"
     )
     bedrock_embeddings = BedrockEmbeddings(client=bedrock_runtime)
 

@@ -50,6 +50,7 @@ Resources:
       - '-'
       - - !Ref AOSSCollectionName
         - !Sub ${AWS::AccountId}  
+        - poc-total-biogas
       PublicAccessBlockConfiguration:
         BlockPublicAcls: true
         BlockPublicPolicy: true
@@ -134,7 +135,7 @@ Resources:
     Type: AWS::SageMaker::NotebookInstance
     Properties:
       NotebookInstanceName: !Sub ${AWS::StackName}-notebook
-      InstanceType: ml.t3.xlarge
+      InstanceType: ml.t3.large
       RoleArn: !GetAtt NotebookRole.Arn
       DefaultCodeRepository: !GetAtt CodeRepository.CodeRepositoryName
       

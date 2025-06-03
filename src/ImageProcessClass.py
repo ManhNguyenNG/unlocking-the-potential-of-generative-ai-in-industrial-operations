@@ -51,7 +51,7 @@ class ImageProcessClass:
         """"
         A function to call claude model
         """
-        model_id = "anthropic.claude-v2"
+        model_id = "anthropic.claude-3-7-sonnet-20250219-v1:0"
         body = {
             "prompt": "\n\nHuman:"+prompt_text+"\n\nAssistant:",
             "max_tokens_to_sample": max_tokens_to_sample
